@@ -1,3 +1,5 @@
+SERVER = 211.68.127.251
+
 all: update
 
 update: home-update etc-update
@@ -19,3 +21,8 @@ etc-update:
 			cp -r /etc/$$file etc; \
 		fi; \
 	done
+
+server-update:
+	@scp ${SERVER}:/home/charlie/.bashrc server/.bashrc || true
+	@scp ${SERVER}:/home/charlie/.tmuxrc server/.tmuxrc || true
+	@scp ${SERVER}:/home/charlie/.vimrc server/.vimrc || true
