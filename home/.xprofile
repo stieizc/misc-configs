@@ -1,0 +1,7 @@
+#xrandr --setprovideroffloadsink radeon Intel
+#export PATH=$HOME/.local/bin:$PATH:/home/Space/eclipse
+export PATH=$HOME/.local/bin:$PATH
+export EDITOR="vim"
+export PAGER="less"
+export RI="-f ansi"
+export LESS="-R"

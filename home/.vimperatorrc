@@ -1,0 +1,13 @@
+"3.8.2 (created: 2014/02/13 23:52:43)
+
+nnoremap <silent> j 5j
+nnoremap <silent> k 5k
+nnoremap <silent> l 5l
+nnoremap <silent> h 5h
+nnoremap <silent> <C-h> 25h
+nnoremap <silent> <C-l> 25l
+nnoremap <silent> <C-j> 25j
+nnoremap <silent> <C-k> 25k
+source! /home/charlie/.vimperatorrc.local
+
+" vim: set ft=vimperator:

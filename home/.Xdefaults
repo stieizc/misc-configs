@@ -1,0 +1,27 @@
+!!urxvt setting
+!fonts
+URxvt.font:xft:WenQuanYi Zenhei Mono:size=11:antialias=true
+!colors
+URxvt.background:black
+URxvt.foreground:white
+URxvt.colorBD:yellow
+URxvt.colorUL:blue
+!scroller
+URxvt.scrollBar:False
+!buffer
+URxvt.saveLines:400
+URxvt.color12:DodgerBlue
+!URxvt.preeditType:Root
+!inputMethod:xim
+!Perl extensions
+!URxvt.perl-ext-common:default,clipboard,matcher,keyboard-select
+URxvt.perl-ext-common:default,clipboard,matcher
+!URxvt.perl-ext-common:default,clipboard-osc,matcher
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-launcher: /usr/bin/firefox
+URxvt.underlineURLs: False
+URxvt.matcher.button: 3
+!URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
