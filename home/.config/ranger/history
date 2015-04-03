@@ -1,0 +1,50 @@
+cd /usr/local/
+mkdir short
+rename guest.babel
+rename qemu.babel
+open_with 
+mkdir long
+rename events.log
+rename config.py
+rename reader.p
+rename reader.py
+mkdir 
+shell 
+mkdir c
+t
+rename cv.rst
+mkdir CV
+rename 简历-王文鑫.html
+rename 简历
+ren
+find C
+mkdi
+mkdir re
+mkdir requirements
+find do
+rename libbta
+rename bta.py
+find tg
+find pr
+cd .config/proxy/
+rename hostie6-smart.pac.old
+cd /home/charlie/.config/proxy
+q
+rename supersu.zip
+mkdir Tegra
+mkdir Linux\ Drivers
+rename Linux Drivers
+rename driver_docs
+mkdir bin
+
+find Ma
+find im
+cd .shool
+mkdir bta-clj
+find f
+find lf
+find 
+delete
+find pa
+find os
+rename distributed

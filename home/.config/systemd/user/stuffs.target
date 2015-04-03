@@ -1,0 +1,5 @@
+[Unit]
+Description=My stuffs
+
+[Install]
+WantedBy=default.target

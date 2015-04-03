@@ -1,0 +1,11 @@
+[Unit]
+Description=Mywiki on moinmoin
+
+[Service]
+Type=fork
+WorkingDirectory=/home/charlie/work/Wiki/mywiki
+#User=charlie
+ExecStart=/usr/bin/moin server standalone --config-dir=/home/charlie/work/Wiki/etc  --port=6997 --docs=/usr/share/moin/htdocs
+
+[Install]
+WantedBy=stuffs.target

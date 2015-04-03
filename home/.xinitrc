@@ -1,21 +1,30 @@
 urxvtd -q -o -f &&
 
-#export LC_CTYPE=zh_CN.UTF-8 &&
-export GTK_IM_MODULE="fcitx"
-export QT_IM_MODULE="fcitx"
-export XMODIFIERS="@im=fcitx"
-
-#scim -d &
 [ -f ~/.xprofile ] && . ~/.xprofile
 ~/.local/bin/rand_bg
 volumeicon &
-eval `ssh-agent`
 
 if [ -f /etc/os-release ] && grep -q "debian" /etc/os-release
 then
+    #export LC_CTYPE=zh_CN.UTF-8 &&
+    export GTK_IM_MODULE="fcitx"
+    export QT_IM_MODULE="fcitx"
+    export XMODIFIERS="@im=fcitx"
+
+    #eval `ssh-agent`
     fbautostart
 else
+    export XMODIFIERS="@im=SCIM"
+    export GTK_IM_MODULE="scim"
+    export QT_IM_MODULE="scim"
     dex -a
+    scim -d &
+
+    eval $(gnome-keyring-daemon --components=pkcs11,secrets,ssh,gpg)
+    export GNOME_KEYRING_PID
+    export GNOME_KEYRING_SOCKET
+    export SSH_AUTH_SOCK
+    export GPG_AGENT_INFO
 fi
 
 xmodmap ~/.xmodmaprc
