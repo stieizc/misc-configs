@@ -1,0 +1,27 @@
+# The RUN variable is obsolete and is not evaluated anymore. If it is set
+# to anything but "yes" during the upgrade to 0.9.7-1 the service will
+# be disabled using update-rc.d.
+# Do not overwrite this file with the package maintainer defaults if you want
+# this to happen.
+
+# A space seperated list of one or more hostnames/IPv4 addresses to use as
+# potential routers.
+# The default is the unqualified hostname 'isatap'
+ISATAP_ROUTERS="isatap.tsinghua.edu.cn"
+
+# IPv6 MTU of the created ISATAP tunnel interface. The IPv4 path to
+# the ISATAP router and all other ISATAP clients should be able to
+# handle at least MTU+20 bytes. 
+# The minimum IPv6 MTU (1280 Bytes) is the safest choice here
+MTU="1280"
+
+# Additional options, see isatapd(8) for details
+#DAEMON_OPTS=""
+
+# Send SIGHUP to running isatapd when an interface comes up
+RELOAD_ON_IFUPDOWN="yes"
+
+# Delay reload for $RELOAD_ON_IFUPDOWN_DELAY seconds to wait for
+# routes to settle
+#RELOAD_ON_IFUPDOWN_DELAY="5"
+
